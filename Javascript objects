@@ -1,0 +1,11 @@
+//Objects in Javascript
+
+var person={
+FirstName='Aishwarya',
+Lastname='Pande',
+Designation='Developer',
+family=['A','B,'C'],
+isMarried='false'
+};
+console.log(person.FirstName);     //Access elements using dot notation
+console.log(person['FirstName']);   //Access elememts using brackets
