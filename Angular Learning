@@ -1,0 +1,16 @@
+/*Property Binding*/
+
+<button class="btn btn-primary" [disabled]="!allowNewServer">Server</button>----<!.....HTML>
+
+
+/*Typescript*/
+
+
+export class RegisterComponent implements OnInit {
+  allowNewServer=false;
+
+  constructor() {
+    setTimeout(()=>{
+      this.allowNewServer=true;
+    },2000);
+   }
