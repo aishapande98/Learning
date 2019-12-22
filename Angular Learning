@@ -1,10 +1,10 @@
-/*Property Binding*/
+/*Property Binding is used to change value dynamically using typescript*/
 
 <button class="btn btn-primary" [disabled]="!allowNewServer">Server</button>----<!.....HTML>
 
 
 /*Typescript*/
-
+/*Here we have added setTimeout() function which will let the code to execute after two seconds*/
 
 export class RegisterComponent implements OnInit {
   allowNewServer=false;
