@@ -1,0 +1,26 @@
+//Javascript Getter
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+var employee = {
+  firstName: "John",
+  lastName : "Doe",
+  Designation : "Software developer",
+  get Desig() {
+    return this.Designation;
+  }
+};
+// Display data from the object using a getter:
+document.getElementById("demo").innerHTML = employee.Desig;
+</script>
+
+</body>
+</html>
