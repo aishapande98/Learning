@@ -1,0 +1,33 @@
+1. Function is an instance of object type.
+2. A function behaves like any another object.
+3. We can store functions in a variable.
+4. Ww can pass functions as an argument to another functions
+5. we can retuen a function from another function.
+
+
+
+<script>
+    //Passing functiona as arguments
+var years=[1990,1993,1994,1996,1997];
+
+function arrayCalc(ar,fn){
+   var arrayres=[];
+
+   for(var i=0;i < ar.length; i++){
+    arrayres.push(fn(ar[i]));
+   }
+  return arrayres;
+}
+function calculateAge(el){
+    return 2020-el;
+}
+function isFullAge(el){
+    return el>= 18;
+}
+//Here we passed calculateAge as an argument to another function
+var ages=arrayCalc(years,calculateAge);
+console.log(ages);
+var fullAges=arrayCalc(ages,isFullAge);
+console.log(fullAges);
+
+</script>
