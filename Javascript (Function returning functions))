@@ -1,0 +1,22 @@
+/*Function returning functions*/
+function interviewQuestions(job){
+    if(job==="designer"){
+        return function(name){
+            console.log(name + 'can you please explain what is UX desgner is?');
+        }
+    }
+    else if (job==="teacher"){
+        return function(name){
+            console.log('what subject do you teach' +name + '?');
+        }
+    }
+    else{
+        console.log('hello' +name+ 'what do yu do?');
+    }
+}
+var teacherquestion=interviewQuestions('teacher');
+var desginerquestion=interviewQuestions('designer');
+desginerquestion('john');
+teacherquestion('John');
+
+interviewQuestions('teacher')('Mark');
