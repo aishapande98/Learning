@@ -1,0 +1,15 @@
+
+
+//Immediately Invoked function
+//Here we can't access variable score outside the function
+
+
+
+(
+    function()
+    {
+        var score=Math.random()*10;
+        console.log(score>=5);
+    }
+)();
+console.log(score);
