@@ -1,0 +1,16 @@
+Closures are bulit-in to Javascript
+If the fuction is returned then it will be removed from Global execution context.
+However, in closure inner function can access properties and variables of outer function even if the parent function is returned.
+Below is the example of Closure in Javascript,
+
+
+function retirement(retirementAge){
+
+
+    return function (YearOfBirth){
+        var Age=2020-YearOfBirth;
+        console.log((retirementAge-Age));
+    }
+}
+var retirementUs=retirement(66);
+retirementUs(1998);
