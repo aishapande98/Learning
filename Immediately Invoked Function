@@ -2,6 +2,7 @@
 
 //Immediately Invoked function
 //Here we can't access variable score outside the function
+//It creates a scope which is not accessible from outside scope
 
 
 
